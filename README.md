@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save google-stocks-watch
+$ npm install --save babel-npm-module-example
 ```
 
 ## How to use
