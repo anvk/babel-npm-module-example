@@ -1,0 +1,23 @@
+{
+  "name": "babel-es6-example",
+  "version": "0.0.1",
+  "author": "anvk",
+  "contributors": [
+    {
+      "name": "Alexey Novak",
+      "email": "alexey.novak.mail@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:anvk/babel-es6-example.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0"
+  },
+  "engine": "node >= 0.10.x",
+  "private": false,
+  "license": "MIT"
+}
