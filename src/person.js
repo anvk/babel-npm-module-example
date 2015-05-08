@@ -1,6 +1,8 @@
 'use strict';
 
-export default class someClass {
+/*global console*/
+
+export default class Person {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -10,7 +12,11 @@ export default class someClass {
     console.log(this.name);
   }
 
-  sayAge() {
-    console.log(this.age);
+  getName() {
+    return this.name;
   }
-};
+
+  getAge() {
+    return this.age;
+  }
+}

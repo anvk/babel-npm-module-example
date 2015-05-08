@@ -1,23 +1,42 @@
 {
-  "name": "babel-es6-example",
+  "name": "babel-npm-module-example",
   "version": "0.0.1",
   "author": "anvk",
+  "main": "index.js",
+  "description": "A boilerplate to start writing your NPM modules in ES6 using Babel.",
   "contributors": [
     {
       "name": "Alexey Novak",
       "email": "alexey.novak.mail@gmail.com"
     }
   ],
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha --reporter spec test/*"
+  },
   "repository": {
     "type": "git",
-    "url": "git@github.com:anvk/babel-es6-example.git"
+    "url": "git@github.com:anvk/babel-npm-module-example.git"
   },
+  "keywords": [
+    "module",
+    "es6",
+    "es5",
+    "babel"
+  ],
   "dependencies": {},
   "devDependencies": {
+    "babel": "^5.2.17",
+    "chai": "^2.3.0",
     "gulp": "^3.8.11",
-    "gulp-babel": "^5.1.0"
+    "gulp-babel": "^5.1.0",
+    "gulp-mocha": "^2.0.1",
+    "mocha": "^2.2.4"
   },
   "engine": "node >= 0.10.x",
+  "homepage": "https://github.com/anvk/babel-npm-module-example",
+  "bugs": {
+    "url": "https://github.com/anvk/babel-npm-module-example/issues"
+  },
   "private": false,
   "license": "MIT"
 }
