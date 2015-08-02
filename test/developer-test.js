@@ -1,8 +1,10 @@
+'use strict';
+
 /*global it, describe, require*/
 
 var chai = require('chai'),
     expect = chai.expect,
-    Developer = require('../lib/developer.js');
+    Developer = require('../dist/developer.js');
 
 describe('developer tests', function() {
 
@@ -13,7 +15,7 @@ describe('developer tests', function() {
   });
 
   after(function() {
-    delete developer;
+    developer = undefined;
   });
 
   it('getName', function() {

@@ -6,13 +6,19 @@
 ## Install
 
 ```
-$ npm install --save babel-npm-module-example
+$ npm install babel-npm-module-example --save
 ```
 
 ## How to use
 
 Open sourcecode, take a look and start coding...
 https://github.com/anvk/babel-npm-module-example
+
+## How to run locally installed gulp
+
+```
+$ node_modules/gulp/bin/gulp.js
+```
 
 ## License
 
