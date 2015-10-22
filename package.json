@@ -1,8 +1,8 @@
 {
   "name": "babel-npm-module-example",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "anvk",
-  "main": "index.js",
+  "main": "dist/developer.js",
   "description": "A boilerplate to start writing your NPM modules in ES6 using Babel.",
   "contributors": [
     {
