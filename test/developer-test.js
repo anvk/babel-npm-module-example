@@ -1,32 +1,27 @@
 'use strict';
 
-/*global it, describe, require*/
+/* global it, describe, before, after */
 
-var chai = require('chai'),
-    expect = chai.expect,
-    Developer = require('../dist/developer.js');
+import {expect} from 'chai';
+import Developer from '../dist/developer.js';
 
-describe('developer tests', function() {
+describe('developer tests', () => {
 
   var developer;
 
-  before(function() {
-    developer = new Developer('Alex', '99');
-  });
+  before(() => developer = new Developer('Alex', '99'));
 
-  after(function() {
-    developer = undefined;
-  });
+  after(() => developer = undefined);
 
-  it('getName', function() {
+  it('getName', () => {
     expect(developer.getName()).to.equal('Alex');
   });
 
-  it('getAge', function() {
+  it('getAge', () => {
     expect(developer.getAge()).to.equal('99');
   });
 
-  it('getWhoAmI', function() {
+  it('getWhoAmI', () => {
     expect(developer.getWhoAmI()).to.equal('Alex JavaScript Developer');
   });
 
