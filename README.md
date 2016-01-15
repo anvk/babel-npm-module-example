@@ -20,8 +20,13 @@ https://github.com/anvk/babel-npm-module-example
 $ node_modules/gulp/bin/gulp.js
 ```
 
+## Important!
+
+I commented out `dist/` folder in my ignore file on purpose just for this example project.
+For a real project you do not want to push `dist/` folder to your repo.
+
 ## License
 
 MIT license; see [LICENSE](./LICENSE).
 
-(c) 2015 by Alexey Novak
+(c) 2016 by Alexey Novak

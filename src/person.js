@@ -19,4 +19,4 @@ export default class Person {
   getAge() {
     return this.age;
   }
-}
+};

@@ -2,20 +2,20 @@
 
 /* global it, describe, before, after */
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
 var _chai = require('chai');
 
-var _distDeveloperJs = require('../dist/developer.js');
+var _developer = require('../dist/developer.js');
 
-var _distDeveloperJs2 = _interopRequireDefault(_distDeveloperJs);
+var _developer2 = _interopRequireDefault(_developer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 describe('developer tests', function () {
 
-  var developer;
+  var developer = undefined;
 
   before(function () {
-    return developer = new _distDeveloperJs2['default']('Alex', '99');
+    return developer = new _developer2.default('Alex', '99');
   });
 
   after(function () {

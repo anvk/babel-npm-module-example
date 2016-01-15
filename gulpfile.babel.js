@@ -2,6 +2,8 @@ import gulp from 'gulp';
 import babel from 'gulp-babel';
 import mocha from 'gulp-mocha';
 import jshint from 'gulp-jshint';
+import del from 'del';
+import runSequence from 'run-sequence';
 
 var config = {
   paths: {
@@ -16,6 +18,10 @@ var config = {
     }
   }
 };
+
+gulp.task('clean', () =>
+  del(config.paths.js.dist)
+);
 
 gulp.task('babel', ['babel-src', 'babel-test']);
 
@@ -55,4 +61,6 @@ gulp.task('test', ['babel'], () =>
 );
 
 // Default Task
-gulp.task('default', ['babel', 'test']);
+gulp.task('default', () =>
+  runSequence('clean', ['babel', 'test'])
+);

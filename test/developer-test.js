@@ -7,7 +7,7 @@ import Developer from '../dist/developer.js';
 
 describe('developer tests', () => {
 
-  var developer;
+  let developer;
 
   before(() => developer = new Developer('Alex', '99'));
 

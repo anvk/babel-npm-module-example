@@ -7,7 +7,7 @@ import Person from '../dist/person.js';
 
 describe('person tests', () => {
 
-  var person;
+  let person;
 
   before(() => person = new Person('Alex', '99'));
 
