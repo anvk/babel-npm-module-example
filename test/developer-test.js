@@ -1,12 +1,10 @@
-'use strict';
-
 /* global it, describe, before, after */
+/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 
-import {expect} from 'chai';
-import Developer from '../dist/developer.js';
+import { expect } from 'chai';
+import Developer from '../dist/developer';
 
 describe('developer tests', () => {
-
   let developer;
 
   before(() => developer = new Developer('Alex', '99'));
@@ -24,5 +22,4 @@ describe('developer tests', () => {
   it('getWhoAmI', () => {
     expect(developer.getWhoAmI()).to.equal('Alex JavaScript Developer');
   });
-
 });
