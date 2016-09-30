@@ -15,9 +15,11 @@ https://github.com/anvk/babel-npm-module-example
 
 ## GULP or NPM commands?
 
+Currently you can build this project either by running a gulp command or npm build command.
+
 ### NPM commands
 
-If you want to build a basic JS module and do not require to run any extra advanced tasks during build you can use [npm-commands]() branch. Or you can remove `gulpfile.babel.js` file and remove the following npm modules from the project:
+If you want to build a basic JS module and do not require to run any extra advanced tasks during build you can use [npm-commands](https://github.com/anvk/babel-npm-module-example/tree/npm-commands) branch. Or you can remove `gulpfile.babel.js` file and remove the following npm modules from the project:
 
  - babel-core
  - gulp
@@ -39,10 +41,10 @@ $ npm test
 
 ### GULP
 
-For those who needs to run extra scripts and do other complicated tasks upon builds you can use [gulp-commands]() branch. Or clean `scripts` object in `package.json` as well as remove the following npm modules from the project:
+For those who needs to run extra scripts and do other complicated tasks upon builds you can use [gulp-commands](https://github.com/anvk/babel-npm-module-example/tree/gulp-commands) branch. Or clean `scripts` object in `package.json` as well as remove the following npm modules from the project:
+
  - rimraf
  - babel-cli
- - babel-eslint
 
 #### Using GULP command
 
@@ -56,7 +58,7 @@ I'm using [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-air
 
 ## Important!
 
-I commented out `dist/` and `test-dist` folders in my ignore file on purpose to demonstrate how built files will look like. In a real project, most likely, you do not want to push `dist/` folder to your repo. If you do, you will constantly see changes in dist folders during your merges/code reviews which can be very annoying.
+I commented out `dist/` and `test-dist` folders in my ignore file on purpose to demonstrate how built files will look like. In a real project, most likely, you do not want to push those `dist folders` to your repo. If you do, you will constantly see changes in dist folders during your merges/code reviews which can be very annoying.
 
 ## License
 
