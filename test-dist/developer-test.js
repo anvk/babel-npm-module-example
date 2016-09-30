@@ -1,18 +1,18 @@
 'use strict';
 
-/* global it, describe, before, after */
-
 var _chai = require('chai');
 
-var _developer = require('../dist/developer.js');
+var _developer = require('../dist/developer');
 
 var _developer2 = _interopRequireDefault(_developer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-describe('developer tests', function () {
+/* global it, describe, before, after */
+/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 
-  var developer = undefined;
+describe('developer tests', function () {
+  var developer = void 0;
 
   before(function () {
     return developer = new _developer2.default('Alex', '99');

@@ -1,13 +1,11 @@
-'use strict';
-
-/*global console*/
+/* global console */
 
 import Person from './person';
 
 export const DEFAULT_OCCUPATION = 'JavaScript Developer';
 
 export default class Developer extends Person {
-  constructor(name, age, occupation=DEFAULT_OCCUPATION) {
+  constructor(name, age, occupation = DEFAULT_OCCUPATION) {
     super(name, age);
     this.occupation = occupation;
   }
@@ -19,5 +17,4 @@ export default class Developer extends Person {
   getWhoAmI() {
     return `${this.name} ${this.occupation}`;
   }
-
-};
+}
