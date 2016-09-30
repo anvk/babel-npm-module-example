@@ -29,5 +29,13 @@ node_modules
 # npm log file
 npm-debug.log
 
-# dist folder
-# dist/   <--- THIS IS COMMENTED ON PURPOSE. FOR REAL PROJECT UNCOMMENT THIS
+#######################################################################
+#                       PLEASE NOTE!!                                 #
+# Two bottom lines are commented just for this project to demonstrate #
+# how built folders look like. For the real project uncomment those   #
+# two lines. Otherwise you will get into merge/code review hell when  #
+# dist folders will be marked as changed after every single change    #
+# in src files                                                        #
+#######################################################################
+# dist/
+# test-dist

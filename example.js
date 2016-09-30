@@ -1,6 +1,6 @@
 'use strict';
 
-/*global require*/
+/* global require */
 
 var Developer = require('./dist/developer.js').default;
 
