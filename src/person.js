@@ -1,6 +1,4 @@
-'use strict';
-
-/*global console*/
+/* global console */
 
 export default class Person {
   constructor(name, age) {
@@ -19,4 +17,4 @@ export default class Person {
   getAge() {
     return this.age;
   }
-};
+}

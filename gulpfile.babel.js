@@ -1,8 +1,8 @@
 import gulp from 'gulp';
 import babel from 'gulp-babel';
 import mocha from 'gulp-mocha';
-import jshint from 'gulp-jshint';
-import del from 'del';
+import eslint from 'gulp-eslint';
+import rimraf from 'gulp-rimraf';
 import runSequence from 'run-sequence';
 
 var config = {
@@ -20,7 +20,8 @@ var config = {
 };
 
 gulp.task('clean', () =>
-  del(config.paths.js.dist)
+  gulp.src([config.paths.js.dist, config.paths.test.dist])
+    .pipe(rimraf({ force: true }))
 );
 
 gulp.task('babel', ['babel-src', 'babel-test']);
@@ -39,14 +40,20 @@ gulp.task('babel-test', ['lint-test'], () =>
 
 gulp.task('lint-src', () =>
   gulp.src(config.paths.js.src)
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'))
+    .pipe(eslint())
+    .pipe(eslint.format())
+    // To have the process exit with an error code (1) on
+    // lint error, return the stream and pipe to failAfterError last.
+    .pipe(eslint.failAfterError())
 );
 
 gulp.task('lint-test', () =>
   gulp.src(config.paths.test.src)
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'))
+    .pipe(eslint())
+    .pipe(eslint.format())
+    // To have the process exit with an error code (1) on
+    // lint error, return the stream and pipe to failAfterError last.
+    .pipe(eslint.failAfterError())
 );
 
 gulp.task('watch', () => {
