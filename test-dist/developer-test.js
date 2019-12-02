@@ -23,7 +23,7 @@ describe('developer tests', function () {
   });
 
   it('getName', function () {
-    (0, _chai.expect)(developer.getName()).to.equal('Alex');
+    (0, _chai.expect)(developer.getName()).to.equal('Richard');
   });
 
   it('getAge', function () {
